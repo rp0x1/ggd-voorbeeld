@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaccination Refrigerator Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 min-h-screen flex items-center justify-center">
+    <div class="w-full h-screen max-w-7xl mx-auto p-6">
+        <!-- Header Section -->
+        <div class="bg-blue-900 text-white p-6 rounded-lg flex justify-between items-center shadow-lg">
+            <h1 class="text-2xl font-bold">Dashboard Vaccinatiekoelkasten</h1>
+            <button class="bg-white text-blue-900 px-4 py-2 rounded-lg font-semibold shadow hover:bg-gray-100">Settings</button>
+        </div>
+        
+        <!-- Main Content Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-8">
+            <!-- Current Temperature -->
+            <div class="bg-white rounded-lg shadow-lg p-6 flex flex-col items-center">
+                <h2 class="text-lg font-semibold">Huidige temperatuur:</h2>
+                <p class="text-5xl font-bold text-green-500 mt-4">3,2°C</p>
+            </div>
+
+            <!-- Vaccinatie Ratio and Stock Level -->
+            <div class="bg-white rounded-lg shadow-lg p-6">
+                <h2 class="text-lg font-semibold mb-4">Vaccinatie en Voorraadratio</h2>
+                <div class="flex items-center mb-6">
+                    <div class="w-20 h-20 rounded-full border-4 border-blue-600 flex items-center justify-center text-3xl font-bold">
+                        2:6
+                    </div>
+                    <div class="ml-6">
+                        <p class="text-lg font-semibold">Huidig voorraadviveau:</p>
+                        <p class="text-4xl font-bold text-blue-600">63%</p>
+                    </div>
+                </div>
+                <div>
+                    <p class="text-lg font-semibold">Sprake van stroomstoringen:</p>
+                    <p class="text-3xl font-bold text-red-600">Nee</p>
+                </div>
+            </div>
+
+            <!-- Door Openings Measured -->
+            <div class="bg-white rounded-lg shadow-lg p-6">
+                <h2 class="text-lg font-semibold mb-4">Gemeten Deuropeningen</h2>
+                <div class="flex justify-between items-end h-36">
+                    <div class="w-8 bg-blue-500 h-16 rounded"></div>
+                    <div class="w-8 bg-green-500 h-24 rounded"></div>
+                    <div class="w-8 bg-blue-500 h-20 rounded"></div>
+                    <div class="w-8 bg-green-500 h-32 rounded"></div>
+                </div>
+                <div class="flex justify-between mt-4 text-sm text-gray-500">
+                    <span>datum-1</span>
+                    <span>datum-2</span>
+                    <span>datum-3</span>
+                    <span>datum-4</span>
+                </div>
+            </div>
+
+            <!-- Refrigerator Stock Management -->
+            <div class="bg-white rounded-lg shadow-lg p-6">
+                <h2 class="text-lg font-semibold mb-4">Voorraadbeheer Koelkast</h2>
+                <div class="relative h-36">
+                    <svg class="absolute inset-0 w-full h-full">
+                        <!-- Line graph -->
+                        <polyline points="10,90 60,50 110,70 160,40 210,80" fill="none" stroke="blue" stroke-width="3" stroke-linecap="round"></polyline>
+                    </svg>
+                </div>
+                <div class="flex justify-between mt-4 text-sm text-gray-500">
+                    <span>datum-1</span>
+                    <span>datum-2</span>
+                    <span>datum-3</span>
+                    <span>datum-4</span>
+                    <span>datum-5</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Section -->
+        <div class="mt-12 text-center">
+            <p class="text-lg text-blue-900 font-bold">ggd.groningen.nl</p>
+        </div>
+    </div>
+</body>
+</html>
